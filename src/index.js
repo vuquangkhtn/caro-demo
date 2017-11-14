@@ -315,6 +315,36 @@ function calculateWinner(squares) {
             }
           ];
         }
+        else if(i < squares.length-4 
+          && j >= 4 
+          && squares[i][j] 
+          && squares[i][j] === squares[i+1][j-1] 
+          && squares[i][j] === squares[i+2][j-2]
+          && squares[i][j] === squares[i+3][j-3] 
+          && squares[i][j] === squares[i+4][j-4]) {
+          return [ 
+            {
+              i:i,
+              j:j
+            },
+            {
+              i:i+1,
+              j:j-1
+            },
+            {
+              i:i+2,
+              j:j-2
+            },
+            {
+              i:i+3,
+              j:j-3
+            },
+            {
+              i:i+4,
+              j:j-4
+            }
+          ];
+        }
       }
     }
   }  
