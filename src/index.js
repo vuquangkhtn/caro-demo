@@ -62,7 +62,7 @@ class Game extends React.Component {
 
   handleClick(row,col) {
     //reset ui listMoves
-    var listBtn = document.getElementsByName("itemMoves");
+    var listBtn = document.getElementsByName("btnMoves");
     for (var i = listBtn.length - 1; i >= 0; i--) {
       listBtn[i].className = "btn";
     }
